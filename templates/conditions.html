@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Document
+	</title>
+</head>
+<body>
+	<center>
+		
+		<h1>
+			<!--
+				Using If statement
+				{% if a > 5 %}
+				<h1>{{a}}</h1>
+				{% endif %}
+			-->
+			<!--
+				Using If-else statement
+				{% if a > b %}
+					<h1>{{a}}</h1>
+				{% else %}
+					<h1>{{b}}</h1>
+				{% endif %}
+			-->
+			<!--
+				Using If-elif-else statement
+				{% if a > b %}
+					<h1>{{a}}</h1>
+				{% elif b > c %}
+					<h1>{{b}}</h1>
+				{% else %}
+					<h1>{{c}}</h1>
+				{% endif %}
+			-->
+				Using nested-If statement
+				{% if a > b and b > c %}
+					{% if a > b %}
+						<h1>{{a}}</h1>
+					{% else %}
+						<h1>{{b}}</h1>
+					{% endif %}
+				{% else %}
+					{% if b > c %}
+						<h1>{{b}}</h1>
+					{% else %}
+						<h1>{{c}}</h1>
+					{% endif %}
+				{% endif %}
+
+		</h1>
+	</center>
+
+</body>
+</html>
